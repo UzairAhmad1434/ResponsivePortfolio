@@ -10,19 +10,29 @@
 .sidebar {
   width: 250px;
   height: 100vh;
-  background: rgb(46, 46, 46);
+  background: linear-gradient(#000000,#434343);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 7rem 1rem;
   display: none;
   position: fixed;
   transition: transform 3000ms ease-in;
 }
+li a{
+  transition: 0.3s border-bottom;
+}
+
+li a:hover {
+border-bottom: 2px rgb(190, 190, 190) solid;
+border-radius: 3px;
+padding: 3px;
+}
+li a:nth-child(1):hover{
+  border: none;
+}
 li a:active {
-  color: rgb(255, 0, 0);
+  border-bottom: 1px rgb(190, 190, 190) solid;
 }
-li a:focus {
-  color: rgb(255, 0, 0);
-}
+
 .homesec {
   height: 100vh;
 }
@@ -85,9 +95,10 @@ main {
 img {
   height: 25rem;
   width: auto;
-  border-radius: 70%;
   margin-left: 1rem;
-  border: solid white 4px;
+  border: solid rgb(75, 75, 75) 4px;
+  transition: .3s border;
+  box-shadow: 0 15px 30px rgb(68, 68, 68);
 }
 img:hover {
   border: solid rgb(51, 51, 51) 4px;
@@ -108,6 +119,7 @@ h1 {
   padding: 0.2rem 0rem;
   font-weight: 700;
 }
+
 
 h5 {
   font-size: 1.2rem;
@@ -138,13 +150,13 @@ h5 {
   background: rgb(51, 51, 51);
   color: white;
   border-radius: 2px;
+  transition:0.3s background;
 }
 
 .btn:hover {
   background: rgb(78, 78, 78);
   color: rgb(255, 255, 255);
   cursor: pointer;
-  transition: transform 3000ms ease-in;
 }
 
 span {
@@ -223,6 +235,7 @@ span {
   background: rgb(51, 51, 51);
   color: white;
   border-radius: 2px;
+  transition:0.3s background;
 }
 
 .butn:hover {
@@ -350,6 +363,8 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2rem;
+    width: 60vw;
   }
 }
 
