@@ -139,7 +139,7 @@ h5 {
 }
 
 .btn:hover {
-  background: rgb(78, 78, 78);
+  background: linear-gradient(#232526,#5f6061);
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
@@ -177,7 +177,7 @@ span {
 }
 
 .card {
-  background: #cdcdcd;
+  background: linear-gradient(#616161,#9bc5c3);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -185,11 +185,9 @@ span {
   margin-top: 1rem;
   gap: 0.3rem;
   align-items: center;
-  border: solid rgb(70, 70, 70) 2px;
 }
 
 .card:hover {
-  border: solid rgb(68, 68, 68) 3px;
   box-shadow: inherit rgb(84, 84, 84);
 }
 
@@ -224,7 +222,7 @@ span {
 }
 
 .butn:hover {
-  background: rgb(78, 78, 78);
+  background: linear-gradient(#232526,#5f6061);
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
