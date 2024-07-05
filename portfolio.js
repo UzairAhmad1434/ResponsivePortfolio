@@ -18,3 +18,15 @@ const ham = document.querySelector(".ham");
 ham.addEventListener("click", showsidebar);
 const cross = document.querySelector(".cross");
 cross.addEventListener("click", hidesidebar);
+
+const circle = document.querySelector(".circle");
+const body = document.querySelector("body");
+
+body.addEventListener("mousemove", (e) => {
+  gsap.to(circle, {
+    x: e.x,
+    y: e.y,
+    duration: 0,
+    ease: "back.out",
+  });
+});
