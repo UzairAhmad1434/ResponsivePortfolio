@@ -1,16 +1,9 @@
 function showsidebar() {
-  const sidebar = document.querySelector(".sidebar");
-  sidebar.style.display = "flex";
-  const ham = document.querySelector(".ham");
-  ham.style.display = "none";
+  tl.play();
   document.body.style.overflowY = "hidden";
 }
 function hidesidebar(e) {
-  e.preventDefault();
-  const sidebar = document.querySelector(".sidebar");
-  sidebar.style.display = "none";
-  const ham = document.querySelector(".ham");
-  ham.style.display = "flex";
+  tl.reverse();
   document.body.style.overflowY = "scroll";
 }
 
@@ -20,13 +13,32 @@ const cross = document.querySelector(".cross");
 cross.addEventListener("click", hidesidebar);
 
 const circle = document.querySelector(".circle");
-const body = document.querySelector("body");
+const boxx = document.querySelector(".circle-box");
 
-body.addEventListener("mousemove", (e) => {
+boxx.addEventListener("mousemove", (e) => {
   gsap.to(circle, {
     x: e.x,
     y: e.y,
-    duration: 0,
-    ease: "back.out",
+    duration: 0.2, // Increase duration for smoother movement
+    ease: "power2.out", // Use a different easing function
   });
 });
+
+const tl = gsap.timeline();
+
+tl.to("#sidebar", {
+  right: 0,
+  duration: 0.5,
+});
+tl.from("li", {
+  x: 150,
+  stagger: 0.3,
+  duration: 0.6,
+});
+tl.from(".cross", {
+  y: -100,
+  opacity: 0,
+  duration: 0.6,
+});
+
+tl.pause();

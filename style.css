@@ -1,19 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: Roboto;
   overflow-x: none;
 }
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem 1rem 3rem;
+  font-weight: 500;
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
 
+.logo {
+  font-size: 2rem;
+  color: red;
+}
 .sidebar {
-  width: 250px;
+  width: 40%;
+  right: -40%;
+  padding: 1rem;
+  top: 0;
+  backdrop-filter: blur(10px);
   height: 100vh;
-  background: linear-gradient(#000000, #434343);
+  background: transparent;
+  /* overflow-y: hidden; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 7rem 1rem;
-  display: none;
+  /* display: none; */
   position: fixed;
   transition: transform 3000ms ease-in;
 }
@@ -47,14 +68,14 @@ nav li a {
   text-decoration: none;
   color: white;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 .cross {
   position: absolute;
   filter: invert(1);
-  top: 5px;
-  left: 205px;
+  top: 10px;
+  left: 400px;
   padding: 0;
   margin: 0;
 }
@@ -114,9 +135,6 @@ h5 {
 }
 
 .ham {
-  position: fixed;
-  top: 10px;
-  left: 15px;
   cursor: pointer;
 }
 
@@ -408,6 +426,6 @@ textarea {
   background: rgb(0, 0, 0);
   border-radius: 50%;
   position: fixed;
-  height: 4rem;
-  width: 4rem;
+  height: 1rem;
+  width: 1rem;
 }
