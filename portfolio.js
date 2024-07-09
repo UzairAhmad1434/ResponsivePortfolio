@@ -42,3 +42,49 @@ tl.from(".cross", {
 });
 
 tl.pause();
+
+const t2 = gsap.timeline();
+
+t2.from(".logo", {
+  y: -40,
+  duration: 0.5,
+});
+t2.from(".ham", {
+  y: -50,
+  stagger: 0.3,
+  duration: 0.6,
+});
+t2.from(
+  ".heading1",
+  {
+    x: -200,
+    duratiiom: 0.8,
+    opacity: 0,
+  },
+  "cls"
+);
+t2.from(".heading2", {
+  x: -200,
+  duratiiom: 0.8,
+  opacity: 0,
+});
+t2.from(".heading3", {
+  x: -200,
+  duratiiom: 0.8,
+  opacity: 0,
+});
+t2.from(".btn", {
+  x: -200,
+  duratiiom: 0.8,
+  opacity: 0,
+  stagger: 0.3,
+});
+t2.from(
+  "img",
+  {
+    x: 200,
+    duratiiom: 0.8,
+    opacity: 0,
+  },
+  "cls"
+);
