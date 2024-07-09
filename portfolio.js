@@ -88,3 +88,40 @@ t2.from(
   },
   "cls"
 );
+
+const t3 = gsap.timeline();
+
+t3.from(
+  ".abouthead1",
+  {
+    x: 200,
+    duratiiom: 0.8,
+    opacity: 0,
+  },
+  "cls"
+);
+t3.from(".abouthead2", {
+  x: 200,
+  duratiiom: 0.8,
+  opacity: 0,
+});
+t3.from(".abouthead3", {
+  x: 200,
+  duratiiom: 0.8,
+  opacity: 0,
+});
+t3.from(".bttn", {
+  x: 200,
+  duratiiom: 0.8,
+  opacity: 0,
+  stagger: 0.3,
+});
+t3.from(
+  "aboutimage",
+  {
+    x: -200,
+    duratiiom: 0.8,
+    opacity: 0,
+  },
+  "cls"
+);
