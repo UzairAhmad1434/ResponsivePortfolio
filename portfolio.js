@@ -125,3 +125,15 @@ t3.from(
   },
   "cls"
 );
+
+const t4 = gsap.timeline();
+t4.from(".blog_heading", {
+  y: -200,
+  duratiiom: 0.8,
+  opacity: 0,
+});
+t4.from(".span1", {
+  x: 500,
+  duratiiom: 0.8,
+  opacity: 0,
+});
