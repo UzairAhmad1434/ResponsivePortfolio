@@ -15,8 +15,8 @@
   font-weight: 500;
   position: fixed;
   width: 100%;
-  background: transparent;
-  backdrop-filter: blur(10px);
+  background: grey;
+  /* backdrop-filter: blur(10px); */
 }
 
 .logo {
@@ -25,17 +25,18 @@
 }
 .sidebar {
   width: 40%;
+  position: fixed;
   right: -40%;
   padding: 1rem;
   top: 0;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   height: 100vh;
   background: grey;
   /* overflow-y: hidden; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 7rem 1rem;
   /* display: none; */
-  position: fixed;
+
   transition: transform 3000ms ease-in;
 }
 
@@ -194,7 +195,7 @@ span {
 }
 
 .card {
-  background: linear-gradient(#616161, #9bc5c3);
+  background: linear-gradient(#616161, #959696);
   border-radius: 10px;
   display: flex;
   flex-direction: column;

@@ -137,3 +137,23 @@ t4.from(".span1", {
   duratiiom: 0.8,
   opacity: 0,
 });
+
+const t5 = gsap.timeline();
+t5.from(".contactheading", {
+  x: -200,
+  duratiiom: 0.8,
+  opacity: 0,
+});
+t5.from(".inp", {
+  x: -200,
+  duratiiom: 0.8,
+  opacity: 0,
+  stagger: 0.3,
+});
+t5.from("#submit", {
+  x: 500,
+  duratiiom: 0.8,
+  opacity: 0,
+});
+
+const t6 = gsap.timeline();
