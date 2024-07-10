@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger);
 function showsidebar() {
   tl.play();
   document.body.style.overflowY = "hidden";
@@ -89,44 +90,62 @@ t2.from(
   "cls"
 );
 
-const t3 = gsap.timeline();
+const t3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".aboutsec",
+    scroller: "body",
+    start: "top 60%",
+    end: "top 80%",
+    scrub: 2,
+    // markers: true,
+  },
+});
 
 t3.from(
   ".abouthead1",
   {
     x: 200,
-    duratiiom: 0.8,
+    duratiiom: 1,
     opacity: 0,
   },
   "cls"
 );
 t3.from(".abouthead2", {
   x: 200,
-  duratiiom: 0.8,
+  duratiiom: 1,
   opacity: 0,
 });
 t3.from(".abouthead3", {
   x: 200,
-  duratiiom: 0.8,
+  duratiiom: 1,
   opacity: 0,
 });
 t3.from(".bttn", {
   x: 200,
-  duratiiom: 0.8,
+  duratiiom: 1,
   opacity: 0,
   stagger: 0.3,
 });
 t3.from(
-  "aboutimage",
+  ".aboutimage",
   {
     x: -200,
-    duratiiom: 0.8,
+    duratiiom: 1,
     opacity: 0,
   },
   "cls"
 );
 
-const t4 = gsap.timeline();
+const t4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".blog",
+    scroller: "body",
+    start: "top 60%",
+    end: "top 100%",
+    scrub: 2,
+    markers: true,
+  },
+});
 t4.from(".blog_heading", {
   y: -200,
   duratiiom: 0.8,
@@ -138,7 +157,16 @@ t4.from(".span1", {
   opacity: 0,
 });
 
-const t5 = gsap.timeline();
+const t5 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".contactpage",
+    scroller: "body",
+    start: "top 60%",
+    end: "top 100%",
+    scrub: 2,
+    markers: true,
+  },
+});
 t5.from(".contactheading", {
   x: -200,
   duratiiom: 0.8,
@@ -156,4 +184,57 @@ t5.from("#submit", {
   opacity: 0,
 });
 
-const t6 = gsap.timeline();
+const t6 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".services",
+    scroller: "body",
+    start: "top 60%",
+    end: "top 100%",
+    scrub: 2,
+    // markers: true,
+  },
+});
+
+t6.from(".serviceheading", {
+  x: -200,
+  duration: 0.6,
+  opacity: 0,
+});
+
+t6.from(".card", {
+  y: -200,
+  duration: 0.7,
+  scale: 0.3,
+  opacity: 0,
+  stagger: 0.3,
+});
+
+t6.from(
+  ".card-head",
+  {
+    x: -200,
+    duration: 0.1,
+    opacity: 0,
+  },
+  "card"
+);
+
+t6.from(
+  ".card-para",
+  {
+    x: -200,
+    duration: 0.1,
+    opacity: 0,
+  },
+  "card"
+);
+
+t6.from(
+  ".butn",
+  {
+    x: -200,
+    duration: 0.1,
+    opacity: 0,
+  },
+  "card"
+);
