@@ -74,7 +74,7 @@ t2.from(".heading3", {
   duratiiom: 0.8,
   opacity: 0,
 });
-t2.from(".btn", {
+t2.from(".buttn", {
   x: -200,
   duratiiom: 0.8,
   opacity: 0,
@@ -143,7 +143,7 @@ const t4 = gsap.timeline({
     start: "top 60%",
     end: "top 100%",
     scrub: 2,
-    markers: true,
+    // markers: true,
   },
 });
 t4.from(".blog_heading", {
@@ -164,7 +164,7 @@ const t5 = gsap.timeline({
     start: "top 60%",
     end: "top 100%",
     scrub: 2,
-    markers: true,
+    // markers: true,
   },
 });
 t5.from(".contactheading", {
@@ -172,17 +172,25 @@ t5.from(".contactheading", {
   duratiiom: 0.8,
   opacity: 0,
 });
-t5.from(".inp", {
-  x: -200,
-  duratiiom: 0.8,
-  opacity: 0,
-  stagger: 0.3,
-});
-t5.from("#submit", {
-  x: 500,
-  duratiiom: 0.8,
-  opacity: 0,
-});
+t5.from(
+  ".inp",
+  {
+    x: -200,
+    duration: 0.8,
+    opacity: 0,
+    stagger: 0.3,
+  },
+  "same"
+);
+t5.from(
+  "#sumbit",
+  {
+    y: -200,
+    duratiiom: 0.4,
+    opacity: 0,
+  },
+  "same"
+);
 
 const t6 = gsap.timeline({
   scrollTrigger: {
