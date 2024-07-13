@@ -20,6 +20,7 @@ body {
   position: fixed;
   width: 100%;
   background: grey;
+  z-index: 100;
   /* backdrop-filter: blur(10px); */
 }
 
@@ -29,6 +30,7 @@ body {
 }
 .sidebar {
   width: 40%;
+  z-index: 100;
   position: fixed;
   right: -40%;
   padding: 1rem;
@@ -100,7 +102,7 @@ nav li a {
 
 main {
   background: #c5c5c5;
-  padding: 8rem 6rem;
+  padding: 10rem 6rem;
   display: flex;
   justify-content: space-between;
   border-bottom: rgb(178, 178, 178) 1px solid;

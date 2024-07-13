@@ -29,66 +29,66 @@ const tl = gsap.timeline();
 
 tl.to("#sidebar", {
   right: 0,
-  duration: 0.5,
+  duration: 0.3,
 });
 tl.from("li", {
   x: 150,
   stagger: 0.3,
-  duration: 0.6,
+  duration: 0.4,
 });
 tl.from(".cross", {
   y: -100,
   opacity: 0,
-  duration: 0.6,
+  duration: 0.4,
 });
 
 tl.pause();
 
-// const t2 = gsap.timeline();
+const t2 = gsap.timeline();
 
-// t2.from(".logo", {
-//   y: -40,
-//   duration: 0.5,
-// });
-// t2.from(".ham", {
-//   y: -50,
-//   stagger: 0.3,
-//   duration: 0.6,
-// });
-// t2.from(
-//   ".heading1",
-//   {
-//     x: -200,
-//     duratiiom: 0.8,
-//     opacity: 0,
-//   },
-//   "cls"
-// );
-// t2.from(".heading2", {
-//   x: -200,
-//   duratiiom: 0.8,
-//   opacity: 0,
-// });
-// t2.from(".heading3", {
-//   x: -200,
-//   duratiiom: 0.8,
-//   opacity: 0,
-// });
-// t2.from(".buttn", {
-//   x: -200,
-//   duratiiom: 0.8,
-//   opacity: 0,
-//   stagger: 0.3,
-// });
-// t2.from(
-//   "img",
-//   {
-//     x: 200,
-//     duratiiom: 0.8,
-//     opacity: 0,
-//   },
-//   "cls"
-// );
+t2.from(".logo", {
+  y: -40,
+  duration: 0.5,
+});
+t2.from(".ham", {
+  y: -50,
+  stagger: 0.3,
+  duration: 0.5,
+});
+t2.from(
+  ".heading1",
+  {
+    x: -200,
+    duratiiom: 0.4,
+    opacity: 0,
+  },
+  "cls"
+);
+t2.from(".heading2", {
+  x: -200,
+  duratiiom: 0.4,
+  opacity: 0,
+});
+t2.from(".heading3", {
+  x: -200,
+  duratiiom: 0.3,
+  opacity: 0,
+});
+t2.from(".buttn", {
+  x: -200,
+  duratiiom: 0.3,
+  opacity: 0,
+  stagger: 0.3,
+});
+t2.from(
+  ".imagehome",
+  {
+    x: 200,
+    duratiiom: 0.5,
+    opacity: 0,
+  },
+  "cls"
+);
 
 // const t3 = gsap.timeline({
 //   scrollTrigger: {
