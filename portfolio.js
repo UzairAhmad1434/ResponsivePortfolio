@@ -32,7 +32,7 @@ tl.to("#sidebar", {
   duration: 0.3,
 });
 tl.from("li", {
-  x: 150,
+  x: 10,
   stagger: 0.3,
   duration: 0.4,
 });
@@ -48,34 +48,34 @@ const t2 = gsap.timeline();
 
 t2.from(".logo", {
   y: -40,
-  duration: 0.5,
+  duration: 0.3,
 });
 t2.from(".ham", {
   y: -50,
   stagger: 0.3,
-  duration: 0.5,
+  duration: 0.3,
 });
 t2.from(
   ".heading1",
   {
-    x: -200,
-    duratiiom: 0.4,
+    x: -100,
+    duratiiom: 0.3,
     opacity: 0,
   },
   "cls"
 );
 t2.from(".heading2", {
-  x: -200,
-  duratiiom: 0.4,
+  x: -100,
+  duratiiom: 0.3,
   opacity: 0,
 });
 t2.from(".heading3", {
-  x: -200,
+  x: -100,
   duratiiom: 0.3,
   opacity: 0,
 });
 t2.from(".buttn", {
-  x: -200,
+  x: -100,
   duratiiom: 0.3,
   opacity: 0,
   stagger: 0.3,
@@ -83,58 +83,12 @@ t2.from(".buttn", {
 t2.from(
   ".imagehome",
   {
-    x: 200,
-    duratiiom: 0.5,
+    x: 100,
+    duratiiom: 0.2,
     opacity: 0,
   },
   "cls"
 );
-
-// const t3 = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".aboutsec",
-//     scroller: "body",
-//     start: "top 60%",
-//     end: "top 80%",
-//     scrub: 2,
-//     // markers: true,
-//   },
-// });
-
-// t3.from(
-//   ".abouthead1",
-//   {
-//     x: 200,
-//     duratiiom: 1,
-//     opacity: 0,
-//   },
-//   "cls"
-// );
-// t3.from(".abouthead2", {
-//   x: 200,
-//   duratiiom: 1,
-//   opacity: 0,
-// });
-// t3.from(".abouthead3", {
-//   x: 200,
-//   duratiiom: 1,
-//   opacity: 0,
-// });
-// t3.from(".bttn", {
-//   x: 200,
-//   duratiiom: 1,
-//   opacity: 0,
-//   stagger: 0.3,
-// });
-// t3.from(
-//   ".aboutimage",
-//   {
-//     x: -200,
-//     duratiiom: 1,
-//     opacity: 0,
-//   },
-//   "cls"
-// );
 
 const t4 = gsap.timeline({
   scrollTrigger: {
@@ -148,12 +102,12 @@ const t4 = gsap.timeline({
 });
 t4.from(".blog_heading", {
   y: -200,
-  duratiiom: 0.8,
+  duratiiom: 0.3,
   opacity: 0,
 });
 t4.from(".span1", {
   x: 500,
-  duratiiom: 0.8,
+  duratiiom: 0.3,
   opacity: 0,
 });
 
@@ -169,28 +123,21 @@ const t5 = gsap.timeline({
 });
 t5.from(".contactheading", {
   x: -200,
-  duratiiom: 0.8,
+  duratiiom: 0.3,
   opacity: 0,
 });
-t5.from(
-  ".inp",
-  {
-    x: -200,
-    duration: 0.8,
-    opacity: 0,
-    stagger: 0.3,
-  },
-  "same"
-);
-t5.from(
-  "#sumbit",
-  {
-    y: -200,
-    duratiiom: 0.4,
-    opacity: 0,
-  },
-  "same"
-);
+t5.from(".inp", {
+  x: -200,
+  duration: 0.3,
+  opacity: 0,
+  stagger: 0.3,
+});
+t5.from("#sumbit", {
+  y: 100,
+  duratiiom: 0.4,
+  scale: 0.3,
+  opacity: 0,
+});
 
 const t6 = gsap.timeline({
   scrollTrigger: {
@@ -204,24 +151,26 @@ const t6 = gsap.timeline({
 });
 
 t6.from(".serviceheading", {
-  x: -200,
+  y: -200,
   duration: 0.6,
+  scale: 0.4,
   opacity: 0,
+  scrub: 5,
 });
 
 t6.from(".card", {
   y: -200,
-  duration: 0.7,
+  duration: 2,
   scale: 0.3,
   opacity: 0,
-  stagger: 0.3,
+  stagger: 0.6,
 });
 
 t6.from(
   ".card-head",
   {
     x: -200,
-    duration: 0.1,
+    duration: 0.3,
     opacity: 0,
   },
   "card"
@@ -231,7 +180,7 @@ t6.from(
   ".card-para",
   {
     x: -200,
-    duration: 0.1,
+    duration: 0.3,
     opacity: 0,
   },
   "card"
@@ -241,7 +190,7 @@ t6.from(
   ".butn",
   {
     x: -200,
-    duration: 0.1,
+    duration: 0.3,
     opacity: 0,
   },
   "card"
