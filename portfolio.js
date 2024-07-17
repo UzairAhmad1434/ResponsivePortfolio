@@ -25,6 +25,13 @@ boxx.addEventListener("mousemove", (e) => {
   });
 });
 
+let logo = document.querySelector(".logo");
+
+logo.innerHTML = logo.textContent
+  .split("")
+  .map((char) => `<span class="logo1">${char}</span>`)
+  .join("");
+
 const tl = gsap.timeline();
 
 tl.to("#sidebar", {
@@ -32,7 +39,7 @@ tl.to("#sidebar", {
   duration: 0.3,
 });
 tl.from("li", {
-  x: 10,
+  x: 100,
   stagger: 0.3,
   duration: 0.4,
 });
@@ -46,9 +53,11 @@ tl.pause();
 
 const t2 = gsap.timeline();
 
-t2.from(".logo", {
-  y: -40,
-  duration: 0.3,
+t2.from(".logo1", {
+  y: 40,
+  duration: 0.4,
+  opacity: 0.5,
+  stagger: 0.3,
 });
 t2.from(".ham", {
   y: -50,
@@ -90,26 +99,51 @@ t2.from(
   "cls"
 );
 
-const t4 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".blog",
-    scroller: "body",
-    start: "top 60%",
-    end: "top 100%",
-    scrub: 2,
-    // markers: true,
-  },
-});
-t4.from(".blog_heading", {
-  y: -200,
-  duratiiom: 0.3,
-  opacity: 0,
-});
-t4.from(".span1", {
-  x: 500,
-  duratiiom: 0.3,
-  opacity: 0,
-});
+// const t3 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".aboutsec",
+//     scroller: "body",
+//     start: "top 60%",
+//     end: "top 100%",
+//     scrub: 2,
+//     // markers: true,
+//   },
+// });
+
+// t3.from(
+//   ".aboutimage",
+//   {
+//     x: -300,
+//     duration: 0.5,
+//     opacity: 0,
+//     scale: 0.5,
+//   },
+//   "samee"
+// );
+// t3.from(
+//   ".abouthead1",
+//   {
+//     x: 200,
+//     duratiion: 0.3,
+//     opacity: 0,
+//   },
+//   "samee"
+// );
+// t3.from(".abouthead2", {
+//   x: 200,
+//   duratiion: 0.3,
+//   opacity: 0,
+// });
+// t3.from(".abouthead3", {
+//   x: 200,
+//   opacity: 0,
+//   duratiion: 0.3,
+// });
+// t3.from(".bttn", {
+//   x: 200,
+//   duration: 0.2,
+//   opacity: 0,
+// });
 
 const t5 = gsap.timeline({
   scrollTrigger: {
@@ -195,3 +229,28 @@ t6.from(
   },
   "card"
 );
+
+let blogheading = document.querySelector(".blog_heading");
+
+blogheading.innerHTML = blogheading.textContent
+  .split("")
+  .map((char) => `<span class="spanheading">${char}</span>`)
+  .join("");
+let spanheading = document.querySelector(".spanheading");
+
+const t4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".blog",
+    scroller: "body",
+    start: "top 60%",
+    end: "top 100%",
+    scrub: 2,
+    // markers: true,
+  },
+});
+t4.from(".spanheading", {
+  y: -30,
+  duratiion: 1,
+  stagger: 0.5,
+  opacity: 0,
+});
