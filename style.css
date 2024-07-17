@@ -282,7 +282,10 @@ textarea {
   margin: 5px;
   border-radius: 5px;
 }
-
+.aboutsec {
+  width: 100%;
+  overflow-x: hidden;
+}
 .main-about {
   padding: 6rem;
   display: flex;
@@ -403,6 +406,17 @@ textarea {
     height: 20rem;
     width: 80%;
     margin: 2rem;
+  }
+  nav li a {
+    font-size: 1.2rem;
+    padding: 5rem 0rem;
+  }
+  nav li {
+    padding: 0rem 0rem;
+  }
+  .sidebar {
+    padding: 6rem 0rem;
+    height: 65%;
   }
 }
 @media (max-width: 414px) {

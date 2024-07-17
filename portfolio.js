@@ -54,9 +54,9 @@ tl.pause();
 const t2 = gsap.timeline();
 
 t2.from(".logo1", {
-  y: 40,
+  y: 10,
   duration: 0.4,
-  opacity: 0.5,
+  opacity: 0,
   stagger: 0.3,
 });
 t2.from(".ham", {
@@ -99,51 +99,51 @@ t2.from(
   "cls"
 );
 
-// const t3 = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".aboutsec",
-//     scroller: "body",
-//     start: "top 60%",
-//     end: "top 100%",
-//     scrub: 2,
-//     // markers: true,
-//   },
-// });
+const t3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".aboutsec",
+    scroller: "body",
+    start: "top 60%",
+    end: "top 100%",
+    scrub: 2,
+    // markers: true,
+  },
+});
 
-// t3.from(
-//   ".aboutimage",
-//   {
-//     x: -300,
-//     duration: 0.5,
-//     opacity: 0,
-//     scale: 0.5,
-//   },
-//   "samee"
-// );
-// t3.from(
-//   ".abouthead1",
-//   {
-//     x: 200,
-//     duratiion: 0.3,
-//     opacity: 0,
-//   },
-//   "samee"
-// );
-// t3.from(".abouthead2", {
-//   x: 200,
-//   duratiion: 0.3,
-//   opacity: 0,
-// });
-// t3.from(".abouthead3", {
-//   x: 200,
-//   opacity: 0,
-//   duratiion: 0.3,
-// });
-// t3.from(".bttn", {
-//   x: 200,
-//   duration: 0.2,
-//   opacity: 0,
-// });
+t3.from(
+  ".aboutimage",
+  {
+    x: -300,
+    duration: 0.5,
+    opacity: 0,
+    scale: 0.5,
+  },
+  "samee"
+);
+t3.from(
+  ".abouthead1",
+  {
+    x: 200,
+    duratiion: 0.3,
+    opacity: 0,
+  },
+  "samee"
+);
+t3.from(".abouthead2", {
+  x: 200,
+  duratiion: 0.3,
+  opacity: 0,
+});
+t3.from(".abouthead3", {
+  x: 200,
+  opacity: 0,
+  duratiion: 0.3,
+});
+t3.from(".bttn", {
+  x: 200,
+  duration: 0.2,
+  opacity: 0,
+});
 
 const t5 = gsap.timeline({
   scrollTrigger: {
